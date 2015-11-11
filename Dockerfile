@@ -18,3 +18,4 @@ EXPOSE 8090
 # For systemd usage this changes to /usr/sbin/init
 # Keeping it as /bin/bash for compatability with previous
 CMD ["service", "grafana-server", "start"]
+CMD ["service", "grafana-server", "status"]
