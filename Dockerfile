@@ -12,11 +12,10 @@ LABEL License=GPLv2
 
 #Install Grafana
 RUN yum install -y https://grafanarel.s3.amazonaws.com/builds/grafana-2.5.0-1.x86_64.rpm
-RUN service grafana-server start
 
 EXPOSE 8090
 
 # For systemd usage this changes to /usr/sbin/init
 # Keeping it as /bin/bash for compatability with previous
-CMD ["/bin/bash"]
+CMD ["service grafana-server start"]
 
