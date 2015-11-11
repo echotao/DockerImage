@@ -9,7 +9,9 @@ LABEL License=GPLv2
 
 # Environment for systemd
 # ENV container=docker
+EXPOSE 8090
 
 # For systemd usage this changes to /usr/sbin/init
 # Keeping it as /bin/bash for compatability with previous
 CMD ["/bin/bash"]
+
