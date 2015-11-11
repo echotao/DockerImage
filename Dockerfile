@@ -1,6 +1,6 @@
 FROM scratch
-MAINTAINER The CentOS Project <cloud-ops@centos.org>
-ADD c7-docker.tar.xz /
+MAINTAINER The CentOS Project <echotao.82@gmail.com>
+#ADD c7-docker.tar.xz /
 LABEL Vendor="CentOS"
 LABEL License=GPLv2
 
