@@ -9,6 +9,11 @@ LABEL License=GPLv2
 
 # Environment for systemd
 # ENV container=docker
+
+#Install Grafana
+RUN yum install -y https://grafanarel.s3.amazonaws.com/builds/grafana-2.5.0-1.x86_64.rpm
+RUN service grafana-server start
+
 EXPOSE 8090
 
 # For systemd usage this changes to /usr/sbin/init
